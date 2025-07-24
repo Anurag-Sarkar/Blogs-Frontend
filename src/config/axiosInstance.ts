@@ -3,7 +3,7 @@ import { handleApiError } from './axiosErrorHandler';
 import type { ApiError } from '../Types/types';
 
 const axiosInstance = axios.create({
-    baseURL: 'http://localhost:3000/api',
+    baseURL: 'http://13.233.0.239:3000/api',
     timeout: 10000,
     withCredentials: true,
 });
