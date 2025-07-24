@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'TTFirsNeue';
+  src: url('/fonts/TT Firs Neue Trial Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTFirsNeue';
+  src: url('/fonts/TT Firs Neue Trial ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTFirsNeue';
+  src: url('/fonts/TT Firs Neue Trial Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTFirsNeue';
+  src: url('/fonts/TT Firs Neue Trial Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTFirsNeue';
+  src: url('/fonts/TT Firs Neue Trial Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTFirsNeue';
+  src: url('/fonts/TT Firs Neue Trial DemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTFirsNeue';
+  src: url('/fonts/TT Firs Neue Trial Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTFirsNeue';
+  src: url('/fonts/TT Firs Neue Trial ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TTFirsNeue';
+  src: url('/fonts/TT Firs Neue Trial Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+*{
+    font-family: 'TTFirsNeue';
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+body{
+  background-color: #faf7f7;
+}
+
+.prose video {
+  width: 100%;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+}
+
+.prose pre {
+  background: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
