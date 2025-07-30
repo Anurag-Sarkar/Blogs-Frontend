@@ -77,7 +77,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="py-5 flex justify-between items-center px-6 rounded-xl bg-white">
+    <div className="py-4 flex justify-between items-center px-6 bg-white">
       <Logo />
       <div className="flex items-center sm:gap-2 gap-1 md:gap-5 shrink-0">
         <div className="relative w-36 sm:w-44 md:w-74" ref={wrapperRef}>

@@ -4,10 +4,10 @@ import parse, { type HTMLReactParserOptions, Element, domToReact } from "html-re
 
 // Tailwind class mappings
 const tagStyles: Record<string, string> = {
-  h1: "text-4xl font-bold text-gray-900 mt-12 mb-6 leading-tight border-b-2 border-gray-200 pb-3",
-  h2: "text-3xl font-bold text-gray-800 mt-10 mb-5 leading-tight",
-  h3: "text-2xl font-semibold text-gray-800 mt-8 mb-4 leading-snug",
-  h4: "text-xl font-semibold text-gray-700 mt-6 mb-3 leading-snug",
+  h1: "text-4xl font-semibold text-gray-900 mt-12 mb-6 leading-tight border-b-2 border-gray-200 pb-3",
+  h2: "text-3xl font-semibold text-gray-800 mt-10 mb-5 leading-tight",
+  h3: "text-2xl font-medium text-gray-800 mt-8 mb-4 leading-snug",
+  h4: "text-xl font-medium text-gray-700 mt-6 mb-3 leading-snug",
   h5: "text-lg font-medium text-gray-700 mt-5 mb-3 leading-normal",
   h6: "text-base font-medium text-gray-600 mt-4 mb-2 leading-normal uppercase tracking-wide",
   p: "text-gray-700 leading-relaxed mb-6 text-lg",

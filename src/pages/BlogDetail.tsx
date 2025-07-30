@@ -125,18 +125,18 @@ const BlogDetail = () => {
   }
 
   return (
-    <div className="mt-3 sm:mt-5 min-h-[83vh] flex flex-col lg:flex-row gap-5 max-w-7xl mx-auto px-1 md:px-4 pb-20 w-full">
+    <div className="mt-3 justify-center sm:mt-5 min-h-[83vh] flex flex-col lg:flex-row gap-5 max-w-9xl mx-auto px-1 md:px-4 pb-20 w-full">
       {/* Table of Contents Sidebar */}
       <aside
-        className={`sticky top-5 h-fit transition-all duration-500 ease-in-out hidden lg:block w-full max-w-80`}
+        className={`sticky ${shrinkContent ? 'w-10' : 'w-full'} top-5 h-fit transition-all duration-500 ease-in-out hidden lg:block max-w-80`}
       >
-        <div className="overflow-hidden bg-white rounded-xl shadow-sm h-full flex flex-col transition-all duration-500">
+        <div className=" overflow-hidden bg-white rounded-xl shadow-sm h-full flex flex-col transition-all duration-500">
           {shrinkContent ? (
             <div
-              className="flex flex-col items-center bg-white rounded-lg justify-center h-full w-full transition-all duration-500"
+              className="flex w-10 flex-col items-center bg-white rounded-lg justify-center h-full transition-all duration-500"
             >
               <button
-                className="w-10 h-10 flex items-center justify-center transition-colors rounded-full hover:bg-gray-100 mt-4"
+                className="w-10 h-10 flex items-center justify-center transition-colors rounded-full hover:bg-gray-100"
                 aria-label="Open Table of Contents"
                 onClick={() => setShrinkContent(false)}
               >
@@ -173,9 +173,9 @@ const BlogDetail = () => {
                         });
                       }
                     }}
-                    className={`w-full text-left px-3 py-2 rounded-lg transition-all duration-300 ${
+                    className={`w-full text-left px-3 py-2 rounded-lg duration-100 ${
                       activeSection === item.anchor
-                        ? "bg-blue-50 text-blue-700 font-medium border-l-2 border-blue-500"
+                        ? "bg-blue-50 text-blue-700 font-medium border-blue-500"
                         : "text-gray-600 hover:bg-gray-50 hover:text-gray-900"
                     } ${item.level === 3 ? "ml-4 text-sm" : ""}`}
                     onClick={() => scrollToSection(item.anchor)}
@@ -202,8 +202,8 @@ const BlogDetail = () => {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 h-full overflow-y-auto transition-all duration-500 w-full">
-        <article className="bg-white relative transition-all duration-500 rounded-xl shadow-sm overflow-hidden p-4 sm:p-8 md:p-10 lg:p-12 pb-6 w-full">
+      <main className="flex-1 h-full overflow-y-auto transition-all duration-500 max-w-[80%] w-full">
+        <article className="bg-white relative transition-all duration-500 rounded-xl shadow-sm p-4 sm:p-8 md:p-10 lg:p-12 pb-6 w-full overflow-hidden">
           {/* Header */}
           <button
             className="absolute hidden lg:block top-3 right-4 text-gray-300 transition-all duration-500 hover:text-gray-500"
@@ -213,7 +213,7 @@ const BlogDetail = () => {
             {!shrinkContent ? <Maximize /> : <Minimize />}
           </button>
           <div className="mb-8 sm:mb-10 border-b border-gray-200 pb-4 sm:pb-6 transition-all duration-500">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight mb-3 sm:mb-4 transition-all duration-500">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 leading-tight mb-3 sm:mb-4 transition-all duration-500">
               {selectedBlog.title}
             </h1>
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 mb-4 sm:mb-6 transition-all duration-500">
