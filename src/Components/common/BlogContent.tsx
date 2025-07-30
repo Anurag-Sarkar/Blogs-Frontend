@@ -19,6 +19,7 @@ const tagStyles: Record<string, string> = {
   blockquote: "border-l-4 border-gray-300 pl-4 italic text-gray-600 my-6",
   table: "table-auto border-collapse border border-gray-300 my-6 w-full",
   tr: "",
+  a:"underline font-medium text-black hover:text-blue-800 transition-colors duration-200",
   td: "border border-gray-300 p-2 text-gray-700",
   strong: "font-semibold",
   em: "italic",

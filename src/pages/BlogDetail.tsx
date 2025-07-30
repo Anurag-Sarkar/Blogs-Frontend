@@ -128,7 +128,7 @@ const BlogDetail = () => {
     <div className="mt-3 justify-center sm:mt-5 min-h-[83vh] flex flex-col lg:flex-row gap-5 max-w-9xl mx-auto px-1 md:px-4 pb-20 w-full">
       {/* Table of Contents Sidebar */}
       <aside
-        className={`sticky ${shrinkContent ? 'w-10' : 'w-full'} top-5 h-fit transition-all duration-500 ease-in-out hidden lg:block max-w-80`}
+        className={`sticky ${shrinkContent ? 'w-10' : 'w-full'} top-20 h-fit transition-all duration-500 ease-in-out hidden lg:block max-w-80`}
       >
         <div className=" overflow-hidden bg-white rounded-xl shadow-sm h-full flex flex-col transition-all duration-500">
           {shrinkContent ? (
